@@ -3,17 +3,17 @@ from flask import url_for, render_template
 
 app = Flask(__name__)
 
-app.route('/')
+@app.route('/')
 def homepage():
     return render_template('news.html')
 
-app.route('/forum')
+@app.route('/forum')
 def forum():
     return render_template('forum.html')
 
-app.route('/video')
+@app.route('/video')
 def video():
     return render_template('video.html')
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5500)
+    app.run(debug=True, port=5502)

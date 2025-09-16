@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>{% block title %} 
             {% endblock %}
     </title>
 </head>
 <body>
+<div class="page">
     <header>
         <nav>
-            <img src="{{url_for('static'), filename='img/d367b49203ad418f2da1d335c5c80187.jpg'}}" alt="logo">
-            <div>
+            <img src="{{url_for('static', filename='img/d367b49203ad418f2da1d335c5c80187.jpg')}}" class="img-nav" alt="logo">
+        <div class="container">
+            <div class="nav-bar">
                 <ul>
                     <li>
-                        <a href="{{url_for('news')}}">Новости</a>
+                        <a href="{{url_for('homepage')}}">Новости</a>
                         <small>здесь будет новостная лента про пчеловодство</small>
                     </li>
                 </ul>
@@ -38,8 +42,10 @@
                     </li> -->
                 </ul>
             </div>
+        
         </nav>
     </header>
+</div>
     {% block body %}
 
 
