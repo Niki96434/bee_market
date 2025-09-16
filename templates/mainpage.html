@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <title>{% block title %} 
+            {% endblock %}
+    </title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="{{url_for('static'), filename='img/d367b49203ad418f2da1d335c5c80187.jpg'}}" alt="logo">
+            <div>
+                <ul>
+                    <li>
+                        <a href="{{url_for('news')}}">Новости</a>
+                        <small>здесь будет новостная лента про пчеловодство</small>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="{{url_for('forum')}}">Обсуждение</a>
+                        <small>пчелограм</small>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="{{url_for('video')}}">Практические видео</a>
+                        <small>обучающие ролики по пчеловодству</small>
+                    </li>
+                </ul>
+                <ul>
+                    <!-- <li>
+                        <a href="http://">Обсуждение</a>
+                        <small>здесь скорее всего будет форум</small>
+                    </li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+    {% block body %}
+
+
+
+    {% endblock %}
+</body>
+</html>
