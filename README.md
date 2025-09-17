@@ -26,7 +26,7 @@
 <p>git checkout main</p>
 <h2>2.Получить из удаленного репозитория самые свежие обновления для main</h2>
 <p>git pull origin main</p>
-<h2>3.Влить изменения из вашей ветки nika в текущую ветку (main)</h2>
+<h2>3.Влить изменения из вашей ветки your_branch в текущую ветку main</h2>
 <p>git merge your_branch</p>
 <h2>4.Отправить обновленный main обратно на сервер.</h2>
 <p>git push origin main</p>
