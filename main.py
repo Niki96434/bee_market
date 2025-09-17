@@ -1,7 +1,18 @@
 from flask import Flask 
 from flask import url_for, render_template
+# from flask_sqlalchemy import SQLAlchemy
 
-app = Flask(__name__)
+
+# app = Flask(__name__)
+# app.config(SQLAlCHEMY_DATABASE_URI = 'sqlite:///our_database.db')
+# db = SQLAlchemy(app)
+# class Post(db.Model):
+#  id = db.Column(db.Integer, primary_key=True)
+#  title = db.Column(db.String(300), nullable=False)
+#  text = db.Column(db.Text, nullable=False)
+# with app.app_context():
+#      db.create_all()
+#      print("database is done")
 
 @app.route('/')
 def homepage():
