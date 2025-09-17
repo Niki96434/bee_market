@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <title>{% block title %} 
+            {% endblock %}
+    </title>
+</head>
+<body>
+        <header>
+            <div>
+                <nav class="img-nav">
+                    <div class="nav-bar">
+                        <ul>
+                        <img src="{{url_for('static', filename='img/pngtree-bee-vector-png-image_6844484.png')}}" alt="logo">
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="{{url_for('homepage')}}">Новости</a>
+                                <!-- <small>здесь будет новостная лента про пчеловодство</small> -->
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="{{url_for('forum')}}">Обсуждение</a>
+                                <!-- <small>пчелограм</small> -->
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="{{url_for('video')}}">Практические видео</a>
+                                <!-- <small>обучающие ролики по пчеловодству</small> -->
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="{{url_for('sign')}}">Вход</a>
+                                <!-- <small>регистрация</small> -->
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+    </header>
+
+    {% block body %}
+
+    {% endblock %}
+    <footer>
+        <p>Author: Veronika Presnyakova<br>
+        <a href="mailto:cozercaniegirl143@mail.ru">cozercaniegirl143@mail.ru</a>
+        </p>
+        <a href="{{url_for('homepage')}}">Главная</a>
+        <a href=".html">Контакты</a>
+    </footer>
+</body>
+</html>
